@@ -20,12 +20,12 @@ public class tutorialActivity extends AppCompatActivity {
     int[] mImage = {R.drawable.cover_bualoy_stick,R.drawable.cover_ko_kati};
     String[] mInclude = {"แป้ง", "ไข่ไก่", "กะทิ", "แป้งข้าวจ้าว", "ไข่ไก่", "กะทิ", "แป้งข้าวจ้าว", "ไข่ไก่", "กะทิ", "แป้งข้าวจ้าว", "ไข่ไก่", "กะทิ", "แป้งข้าวจ้าว", "ไข่ไก่", "กะทิ", "แป้งข้าวจ้าว"};
     int position;
-    Intent intent = getIntent();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial);
 
+        Intent intent = getIntent();
         position = intent.getIntExtra("key_position",0);
         mTitle = intent.getStringExtra("key_title");
         mSubtitle = intent.getStringExtra("key_subtitle");
@@ -43,10 +43,10 @@ public class tutorialActivity extends AppCompatActivity {
         listView.setAdapter(aa);
     }
     public void onStart(View view){
-        /*Intent intentToTutorial = new Intent(tutorialActivity.this,cooking.class);
+        Intent intentToTutorial = new Intent(tutorialActivity.this,cookingActivity.class);
         intentToTutorial.putExtra("key_position",position);
         intentToTutorial.putExtra("key_title",mTitle);
         intentToTutorial.putExtra("key_subtitle",mSubtitle);
-        startActivity(intentToTutorial);**/
+        startActivity(intentToTutorial);
     }
 }

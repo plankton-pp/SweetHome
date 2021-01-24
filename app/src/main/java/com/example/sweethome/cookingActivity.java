@@ -6,17 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class cooking extends AppCompatActivity {
-    int ROUND = 0;
-    int LIMIT = 5;
-    Intent getIntent = getIntent();
-    Intent intentToMain = new Intent(cooking.this,MainActivity.class);
-    //Intent intentToBack = new Intent(cooking.this,tutorialActivity.class);
-
+public class cookingActivity extends AppCompatActivity {
+    int ROUND;
+    int LIMIT;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cooking);
+
+        ROUND = 0;
+        LIMIT = 5;
+        Intent getIntent = getIntent();
+        Intent intentToMain = new Intent(cookingActivity.this,MainActivity.class);
+        //Intent intentToBack = new Intent(cooking.this,tutorialActivity.class);
     }
     public void onBack(View view){
         if(ROUND==0){
