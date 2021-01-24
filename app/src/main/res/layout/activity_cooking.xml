@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cooking">
+
+    <ImageButton
+        android:id="@+id/img_icon_start"
+        android:layout_width="77dp"
+        android:layout_height="87dp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="62dp"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/img_icon_cooking"
+        android:layout_width="77dp"
+        android:layout_height="87dp"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="62dp"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageButton
+        android:id="@+id/img_icon_final"
+        android:layout_width="77dp"
+        android:layout_height="87dp"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="62dp"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageButton
+        android:onClick="onBack"
+        android:id="@+id/img_icon_back"
+        android:layout_width="77dp"
+        android:layout_height="87dp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="571dp"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageButton
+        android:onClick="onFoward"
+        android:id="@+id/img_forward"
+        android:layout_width="77dp"
+        android:layout_height="87dp"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="571dp"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints"/>
+
+    <Button
+        android:onClick="onComplete"
+        android:id="@+id/btn_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="584dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

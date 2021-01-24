@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SweetHome</string>
+    <string name="menu_foodList">LETs COOK</string>
+    <string name="menu_quit">QUIT</string>
+    <string name="menu_favList">FAVORITE</string>
+    <string name="title">TITLE</string>
+    <string name="subtitle">subtitle</string>
+    <string name="label_include">component: </string>
+    <string name="label_menu">MENU: </string>
+    <string name="menu_play">START</string>
+</resources>
